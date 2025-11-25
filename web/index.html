@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIM JI EUN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="inner">
+        <div class="logo">KIM JI EUN Project</div>
+        <nav class="main-nav">
+            <a href="#" class="active">Main</a>
+            <a href="#project">Project</a>
+        </nav>
+    </div>
+</header>
+
+<!-- INTRO -->
+<main>
+<section class="intro">
+    <div class="inner">
+        <p><strong>KIM JI EUN, Product Designer</strong></p>
+        <p>안녕하세요, 사용자 경험을 탐구하는 UI·UX 디자이너입니다.</p>
+        <p>문제를 발견하고, 더 나은 사용성으로 풀어내는 과정에 가치를 느낍니다.</p>
+        <p>데이터와 관찰, 그리고 감각적인 디자인 사이의 균형을 추구합니다.</p>
+        <p>사람을 이해하는 디자인, 오래 기억되는 경험을 만드는 것이 목표입니다.</p>
+        <p>지금도 더 나은 인터페이스를 고민하며 성장하고 있습니다.</p>
+    </div>
+</section>
+
+<!-- CURRENT -->
+<section class="section">
+    <div class="inner">
+        <h2 class="section-title">My recent</h2>
+        <div class="current-grid">
+            <article class="current-item" data-reveal>
+                <div class="image-wrap">
+                    <img src="images/project 01.png" alt="project01">
+                </div>
+                <div class="caption">Kim ji eun, 농협 송금창 클론<br>11/25–11/25/2025</div>
+            </article>
+            <article class="current-item" data-reveal>
+                <div class="image-wrap">
+                    <img src="images/project 02.png" alt="project02">
+                </div>
+                <div class="caption">Kim ji eun, 항공 탑승권 클론<br>11/25–11/25/2025</div>
+            </article>
+            <article class="current-item" data-reveal>
+                <div class="image-wrap">
+                    <img src="images/project 03.png" alt="project03">
+                </div>
+                <div class="caption">Kim ji eun, 야놀자 항공권 클론<br>11/25–11/25/2025</div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+    <div class="inner">
+        <h2 id="project" class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item" data-reveal><img src="images/project 04.png" alt=""></div>
+            <div class="project-item" data-reveal><img src="images/project 05.png" alt=""></div>
+            <div class="project-item" data-reveal><img src="images/project 06.png" alt=""></div>
+            <div class="project-item" data-reveal><img src="images/project 07.png" alt=""></div>
+            <div class="project-item" data-reveal><img src="images/project 08.png" alt=""></div>
+            <div class="project-item" data-reveal><img src="images/project 09.png" alt=""></div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+
+<!-- ABOUT -->
+<section class="section section-about">
+    <div class="inner about-layout">
+        <div class="about-text">
+            <button class="about-button">About</button>
+            <div class="about-info">
+                <p>KIM JI EUN, Product Designer</p>
+                <p>32-11, Samseong-ro 63-gil, Gangnam-gu, Seoul, Republic of Korea</p>
+                <p>E oaoagallery@gmail.com<br>T 02.6207.3211<br>@oaoa_gallery</p>
+                <p class="about-hours">
+                    수 - 토요일, 11 - 18시 (월, 화, 일요일, 공휴일 휴관)<br>
+                    Wednesday - Saturday, 11am - 18pm<br>
+                    (Closed on Mon, Tue, Sunday and Holidays)
+                </p>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="images/55.jpg" alt="oaoa gallery space">
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="inner">
+        <p>Copyright 2022. oaoa gallery All rights reserved.</p>
+        <a href="#" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+</footer>
+
+<script>
+/* Scroll reveal JS */
+const revealElements = document.querySelectorAll('[data-reveal]');
+const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < windowHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
